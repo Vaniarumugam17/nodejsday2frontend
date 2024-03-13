@@ -10,6 +10,15 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+// rollup.config.js
+
+export default {
+  input: 'src/index.js', // Specify the path to your JavaScript entry file
+  output: {
+    file: 'dist/bundle.js',
+    format: 'umd'
+  }
+};
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
